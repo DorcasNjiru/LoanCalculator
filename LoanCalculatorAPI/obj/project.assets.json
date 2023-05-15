@@ -844,6 +844,29 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlDocument.dll": {}
         }
+      },
+      "Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Loan_Calculator": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Infrastructure.dll": {}
+        }
+      },
+      "Loan_Calculator/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Loan_Calculator.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Loan_Calculator.dll": {}
+        }
       }
     }
   },
@@ -3636,10 +3659,21 @@
         "system.xml.xmldocument.4.3.0.nupkg.sha512",
         "system.xml.xmldocument.nuspec"
       ]
+    },
+    "Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../Infrastructure/Infrastructure.csproj",
+      "msbuildProject": "../Infrastructure/Infrastructure.csproj"
+    },
+    "Loan_Calculator/1.0.0": {
+      "type": "project",
+      "path": "../Loan_Calculator/Loan_Calculator.csproj",
+      "msbuildProject": "../Loan_Calculator/Loan_Calculator.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "Infrastructure >= 1.0.0",
       "Microsoft.AspNetCore.Authentication.AzureAD.UI >= 3.1.28"
     ]
   },
@@ -3677,7 +3711,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Dorcas.Njiru\\source\\repos\\LoanCalculator\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\Dorcas.Njiru\\source\\repos\\LoanCalculator\\Infrastructure\\Infrastructure.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -49,6 +49,12 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Syncfusion.Pdf.Net.Core": {
+              "target": "Package",
+              "version": "[21.2.4, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

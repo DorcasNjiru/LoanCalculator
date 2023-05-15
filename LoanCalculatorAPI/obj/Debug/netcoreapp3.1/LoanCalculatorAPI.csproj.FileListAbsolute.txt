@@ -22,7 +22,6 @@ C:\Users\Dorcas.Njiru\source\repos\LoanCalculator\LoanCalculatorAPI\obj\Debug\ne
 C:\Users\Dorcas.Njiru\source\repos\LoanCalculator\LoanCalculatorAPI\obj\Debug\netcoreapp3.1\LoanCalculatorAPI.AssemblyInfoInputs.cache
 C:\Users\Dorcas.Njiru\source\repos\LoanCalculator\LoanCalculatorAPI\obj\Debug\netcoreapp3.1\LoanCalculatorAPI.AssemblyInfo.cs
 C:\Users\Dorcas.Njiru\source\repos\LoanCalculator\LoanCalculatorAPI\obj\Debug\netcoreapp3.1\LoanCalculatorAPI.csproj.CoreCompileInputs.cache
-C:\Users\Dorcas.Njiru\source\repos\LoanCalculator\LoanCalculatorAPI\obj\Debug\netcoreapp3.1\LoanCalculatorAPI.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Dorcas.Njiru\source\repos\LoanCalculator\LoanCalculatorAPI\obj\Debug\netcoreapp3.1\LoanCalculatorAPI.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Dorcas.Njiru\source\repos\LoanCalculator\LoanCalculatorAPI\obj\Debug\netcoreapp3.1\staticwebassets\LoanCalculatorAPI.StaticWebAssets.Manifest.cache
 C:\Users\Dorcas.Njiru\source\repos\LoanCalculator\LoanCalculatorAPI\obj\Debug\netcoreapp3.1\staticwebassets\LoanCalculatorAPI.StaticWebAssets.xml
@@ -32,3 +31,15 @@ C:\Users\Dorcas.Njiru\source\repos\LoanCalculator\LoanCalculatorAPI\obj\Debug\ne
 C:\Users\Dorcas.Njiru\source\repos\LoanCalculator\LoanCalculatorAPI\obj\Debug\netcoreapp3.1\LoanCalculatorAPI.dll
 C:\Users\Dorcas.Njiru\source\repos\LoanCalculator\LoanCalculatorAPI\obj\Debug\netcoreapp3.1\LoanCalculatorAPI.pdb
 C:\Users\Dorcas.Njiru\source\repos\LoanCalculator\LoanCalculatorAPI\obj\Debug\netcoreapp3.1\LoanCalculatorAPI.genruntimeconfig.cache
+C:\Users\Dorcas.Njiru\source\repos\LoanCalculator\LoanCalculatorAPI\bin\Debug\netcoreapp3.1\Infrastructure.deps.json
+C:\Users\Dorcas.Njiru\source\repos\LoanCalculator\LoanCalculatorAPI\bin\Debug\netcoreapp3.1\Infrastructure.runtimeconfig.json
+C:\Users\Dorcas.Njiru\source\repos\LoanCalculator\LoanCalculatorAPI\bin\Debug\netcoreapp3.1\Infrastructure.runtimeconfig.dev.json
+C:\Users\Dorcas.Njiru\source\repos\LoanCalculator\LoanCalculatorAPI\bin\Debug\netcoreapp3.1\Loan_Calculator.deps.json
+C:\Users\Dorcas.Njiru\source\repos\LoanCalculator\LoanCalculatorAPI\bin\Debug\netcoreapp3.1\Loan_Calculator.runtimeconfig.json
+C:\Users\Dorcas.Njiru\source\repos\LoanCalculator\LoanCalculatorAPI\bin\Debug\netcoreapp3.1\Loan_Calculator.runtimeconfig.dev.json
+C:\Users\Dorcas.Njiru\source\repos\LoanCalculator\LoanCalculatorAPI\bin\Debug\netcoreapp3.1\Loan_Calculator.exe
+C:\Users\Dorcas.Njiru\source\repos\LoanCalculator\LoanCalculatorAPI\bin\Debug\netcoreapp3.1\Infrastructure.exe
+C:\Users\Dorcas.Njiru\source\repos\LoanCalculator\LoanCalculatorAPI\bin\Debug\netcoreapp3.1\Infrastructure.dll
+C:\Users\Dorcas.Njiru\source\repos\LoanCalculator\LoanCalculatorAPI\bin\Debug\netcoreapp3.1\Loan_Calculator.dll
+C:\Users\Dorcas.Njiru\source\repos\LoanCalculator\LoanCalculatorAPI\bin\Debug\netcoreapp3.1\Infrastructure.pdb
+C:\Users\Dorcas.Njiru\source\repos\LoanCalculator\LoanCalculatorAPI\bin\Debug\netcoreapp3.1\Loan_Calculator.pdb

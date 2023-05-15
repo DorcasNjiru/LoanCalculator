@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "F6rGRk+oBFHxcL3VnOxxuT0T2qYIuPCyTpyfVAxHpGtPlsEKljB4IsglZhNvUZy1ax0i8SntVaT7+PqfySaCsQ==",
+  "dgSpecHash": "v5xRL4m9Agz2i+CZzIYcHJwCqHpsT8C2krCreyY6RZL7fpxhtWhVsQ0gGWmBGgU08DLZ8wD863ucRl4bJqwqAg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Dorcas.Njiru\\source\\repos\\LoanCalculator\\Infrastructure\\Infrastructure.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Dorcas.Njiru\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
+    "C:\\Users\\Dorcas.Njiru\\.nuget\\packages\\netstandard.library\\2.0.0\\netstandard.library.2.0.0.nupkg.sha512",
+    "C:\\Users\\Dorcas.Njiru\\.nuget\\packages\\syncfusion.compression.net.core\\21.2.4\\syncfusion.compression.net.core.21.2.4.nupkg.sha512",
+    "C:\\Users\\Dorcas.Njiru\\.nuget\\packages\\syncfusion.licensing\\21.2.4\\syncfusion.licensing.21.2.4.nupkg.sha512",
+    "C:\\Users\\Dorcas.Njiru\\.nuget\\packages\\syncfusion.pdf.net.core\\21.2.4\\syncfusion.pdf.net.core.21.2.4.nupkg.sha512",
+    "C:\\Users\\Dorcas.Njiru\\.nuget\\packages\\system.text.encoding.codepages\\4.4.0\\system.text.encoding.codepages.4.4.0.nupkg.sha512"
+  ],
   "logs": []
 }
