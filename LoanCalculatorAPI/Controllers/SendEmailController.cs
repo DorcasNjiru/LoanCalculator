@@ -5,83 +5,59 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
+// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+
 namespace LoanCalculatorAPI.Controllers
 {
-    public class SendEmailController : Controller
+     public class upload
     {
-        // GET: SendEmailController
-        public ActionResult Index()
+
+        public IFormFile File { get; set; }
+        public int ID { get; set; }
+    }
+
+
+
+    [Route("api/[controller]")]
+    [ApiController]
+    public class SendEmailController : ControllerBase
+    {
+        // GET: api/<SendEmailController>
+        [HttpGet]
+        public IEnumerable<string> Get()
         {
-            return View();
+            return new string[] { "value1", "value2" };
         }
 
-        // GET: SendEmailController/Details/5
-        public ActionResult Details(int id)
+        // GET api/<SendEmailController>/5
+        [HttpGet("{id}")]
+        public string Get(int id)
         {
-            return View();
+            return "value";
         }
 
-        // GET: SendEmailController/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
 
-        // POST: SendEmailController/Create
+
+       
+
+        // POST api/<SendEmailController>
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public async Task<IActionResult> Post([FromForm] IFormFile upl)
         {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
+
+            return Ok();
         }
 
-        // GET: SendEmailController/Edit/5
-        public ActionResult Edit(int id)
+        // PUT api/<SendEmailController>/5
+        [HttpPut("{id}")]
+        public void Put(int id, [FromBody] string value)
         {
-            return View();
         }
 
-        // POST: SendEmailController/Edit/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        // DELETE api/<SendEmailController>/5
+        [HttpDelete("{id}")]
+        public void Delete(int id)
         {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        // GET: SendEmailController/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
-
-        // POST: SendEmailController/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
         }
     }
 }

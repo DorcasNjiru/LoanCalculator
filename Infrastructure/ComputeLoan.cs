@@ -20,19 +20,41 @@ namespace Infrastructure
             decimal totalInterest = 0;
             decimal totalCharges = 0;
             decimal totalLoanAmount = 0;
-            decimal processingFees = 3000;
-            int interestRate = 20;
+            decimal processingFees = 0;
+            int interestRate = 0;
             CalculateLoanResponseModel clrm = null;
             List<CalculateLoanResponseModel> lsclrm = new List<CalculateLoanResponseModel>();
-            
 
-            // Calculate installment based on interest type (Flat Rate or Reducing Balance)
+            processingFees = (decimal)0.03 * cli.AmountToBorrow;
 
             if (cli.InterestType == "Flat Rate")
             {
-                decimal annualInterestRate = 20;
-                decimal monthlyInterestRate = annualInterestRate / 12 / 100;
+                decimal annualInterestRate = 0;
+                //decimal monthlyInterestRate = annualInterestRate / 12 / 100;
                 int totalPayments = (cli.LoanPeriod / 12) * GetNumberOfPaymentsPerYear(cli.PaymentFrequency);
+
+
+
+                switch (cli.Bank)
+                {
+                    case "Bank A":
+                        annualInterestRate = 20; 
+                     
+                        break;
+
+                    case "Bank B":
+                        annualInterestRate = 18;
+
+                        break;
+
+                    default:
+                        break;
+                }
+
+
+
+
+
 
                 decimal bal = 0;
                 //installment = (cli.AmountToBorrow + (processingFees + processingFees * 0.2m)) / totalPayments;
@@ -62,7 +84,24 @@ namespace Infrastructure
             }
             else if (cli.InterestType == "Reducing Balance")
             {
-                decimal annualInterestRate = 22;
+                decimal annualInterestRate = 0;
+
+
+                switch (cli.Bank)
+                {
+                    case "Bank A":
+                        annualInterestRate = 22;
+
+                        break;
+
+                    case "Bank B":
+                        annualInterestRate = 25;
+
+                        break;
+
+                    default:
+                        break;
+                }
 
                 decimal monthlyInterestRate = annualInterestRate / 12 / 100;
 

@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using Infrastructure;
 using Infrastructure.InputParams;
 using Infrastructure.Responses;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Authorization;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -22,7 +24,7 @@ namespace LoanCalculatorAPI.Controllers
             return new string[] { "value1", "value2" };
         }
 
-        // GET api/<CalculateLoanController>/5
+        // GET api/<CalculateLoanController>/5S
         [HttpGet("{id}")]
         public string Get(int id)
         {
@@ -30,7 +32,7 @@ namespace LoanCalculatorAPI.Controllers
         }
 
         // POST api/<CalculateLoanController>
-        [HttpPost]
+        [HttpPost, Authorize]
         public ActionResult Post([FromBody] CalculateLoanInput cli )
         {
             Infrastructure.IComputeLoan cml = new ComputeLoan();
@@ -38,6 +40,7 @@ namespace LoanCalculatorAPI.Controllers
 
             return Ok(clr);
         }
+  
 
         // PUT api/<CalculateLoanController>/5
         [HttpPut("{id}")]
