@@ -32,7 +32,7 @@ namespace LoanCalculatorAPI.Controllers
         }
 
         // POST api/<CalculateLoanController>
-        [HttpPost, Authorize]
+        [HttpPost]
         public ActionResult Post([FromBody] CalculateLoanInput cli )
         {
             Infrastructure.IComputeLoan cml = new ComputeLoan();

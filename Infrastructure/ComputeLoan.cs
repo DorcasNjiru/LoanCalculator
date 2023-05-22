@@ -51,11 +51,6 @@ namespace Infrastructure
                         break;
                 }
 
-
-
-
-
-
                 decimal bal = 0;
                 //installment = (cli.AmountToBorrow + (processingFees + processingFees * 0.2m)) / totalPayments;
                 //totalInterest = installment * totalPayments - cli.AmountToBorrow;
