@@ -21,7 +21,7 @@ namespace Infrastructure
             decimal totalCharges = 0;
             decimal totalLoanAmount = 0;
             decimal processingFees = 0;
-            int interestRate = 0;
+            int totalPayments = 0;
             CalculateLoanResponseModel clrm = null;
             List<CalculateLoanResponseModel> lsclrm = new List<CalculateLoanResponseModel>();
 
@@ -30,10 +30,15 @@ namespace Infrastructure
             if (cli.InterestType == "Flat Rate")
             {
                 decimal annualInterestRate = 0;
+                var a = GetNumberOfPaymentsPerYear(cli.PaymentFrequency);
                 //decimal monthlyInterestRate = annualInterestRate / 12 / 100;
-                int totalPayments = (cli.LoanPeriod / 12) * GetNumberOfPaymentsPerYear(cli.PaymentFrequency);
 
+                totalPayments = (cli.LoanPeriod / 12) * GetNumberOfPaymentsPerYear(cli.PaymentFrequency);
 
+                if (cli.PaymentFrequency== "Monthly")
+                {
+                    totalPayments = cli.LoanPeriod;
+                }
 
                 switch (cli.Bank)
                 {
@@ -100,7 +105,13 @@ namespace Infrastructure
 
                 decimal monthlyInterestRate = annualInterestRate / 12 / 100;
 
-                int totalPayments = (cli.LoanPeriod / 12) * GetNumberOfPaymentsPerYear(cli.PaymentFrequency);
+                totalPayments = (cli.LoanPeriod / 12) * GetNumberOfPaymentsPerYear(cli.PaymentFrequency);
+
+                if (cli.PaymentFrequency == "Monthly")
+                {
+                    totalPayments = cli.LoanPeriod;
+                }
+
 
                 decimal remainingAmount = cli.AmountToBorrow;
 
